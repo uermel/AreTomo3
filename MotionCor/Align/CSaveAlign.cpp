@@ -128,10 +128,6 @@ void CSaveAlign::mSaveHeader
 	fprintf(pFile, "   patches: %d %d\n", iPatX, iPatY);
 	fprintf(pFile, "   fmRef: %d\n", iFmRef);
 	fprintf(pFile, "   frame_index_base: 0\n");
-	fprintf(pFile, "   pixel_center_offset: 0.0\n");
-	fprintf(pFile, "   coordinate_space: "
-	   "alignment-image-px, corner-origin\n");
-	fprintf(pFile, "   map_direction: corrected->raw (out(x)=in(x-s))\n");
 	//-----------------
 	fprintf(pFile, "frameTable\n");
 	for(int i=0; i<pFmIntParam->GetProvNumIntFrames(); i++)
